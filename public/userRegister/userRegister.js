@@ -1,6 +1,8 @@
 // Yajra Datatable
 jQuery(function () {
     var table = jQuery("#userRegister").DataTable({
+        dom: "Bfrtip",
+        buttons: ["print", "excel"],
         processing: true,
         serverSide: true,
         stateSave: true,

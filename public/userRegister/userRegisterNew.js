@@ -41,6 +41,8 @@ jQuery("#btnSaveRule").click(function () {
         jQuery("#userRegister").dataTable().fnDestroy();
         var table = jQuery(".data-table")
             .DataTable({
+                dom: "Bfrtip",
+                buttons: ["print", "excel"],
                 processing: true,
                 serverSide: true,
                 stateSave: true,

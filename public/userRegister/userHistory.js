@@ -1,6 +1,8 @@
 // Yajra Datatable
 jQuery(function () {
     var table = jQuery("#userHistory").DataTable({
+        dom: "Bfrtip",
+        buttons: ["print", "excel"],
         processing: true,
         serverSide: true,
         stateSave: true,
@@ -26,10 +28,10 @@ jQuery(function () {
                 data: "isPaid",
                 name: "isPaid",
                 render: function (data, type, row, meta) {
-                    if (data != 0) {
-                        return "Төлбөр төлөгдсөн";
+                    if (data === "PAID") {
+                        return "Төлбөр төлсөн";
                     } else {
-                        return "Төлбөр төлөгдөөгүй";
+                        return "0";
                     }
                 },
             },
