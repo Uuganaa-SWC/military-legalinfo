@@ -22,7 +22,17 @@ jQuery(function () {
             { data: "phoneNumber", name: "phoneNumber" },
             { data: "invoiceID", name: "invoiceID" },
             { data: "senderInvoiceNo", name: "senderInvoiceNo" },
-            { data: "isPaid", name: "isPaid" },
+            {
+                data: "isPaid",
+                name: "isPaid",
+                render: function (data, type, row, meta) {
+                    if (data != 0) {
+                        return "Төлбөр төлөгдсөн";
+                    } else {
+                        return "Төлбөр төлөгдөөгүй";
+                    }
+                },
+            },
             { data: "callBackDate", name: "callBackDate" },
         ],
         language: {

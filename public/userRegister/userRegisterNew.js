@@ -62,7 +62,17 @@ jQuery("#btnSaveRule").click(function () {
                     { data: "phone_number", name: "phone_number" },
                     { data: "money", name: "money" },
                     { data: "date", name: "date" },
-                    // { data: "isToken", name: "isToken" },
+                    {
+                        data: "isToken",
+                        name: "isToken",
+                        render: function (data, type, row, meta) {
+                            if (data != 0) {
+                                return "Идэвхитэй";
+                            } else {
+                                return "Идэвхигүй";
+                            }
+                        },
+                    },
                     { data: "tailbar", name: "tailbar" },
                 ],
                 language: {
