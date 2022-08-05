@@ -1,0 +1,16 @@
+.user-area .user-avatar {
+    width: 20px;
+}
+
+.user-area .user-menu {
+    margin-top: 10px;
+}
+
+
+.menutoggle {
+    background: white;
+}
+
+.right-panel header.header {
+    background: rgba(0, 0, 0, 0.1);
+}
