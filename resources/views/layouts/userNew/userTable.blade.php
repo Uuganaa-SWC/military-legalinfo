@@ -12,7 +12,7 @@
                     <th style="text-align:center">Утасны дугаар</th>
                     <th style="text-align:center">Мөнгөн дүн</th>
                     <th style="text-align:center">Нээсэн хугацаа</th>
-                    {{-- <th style="text-align:center">Идэвхитэй эсэх</th> --}}
+                    <th style="text-align:center">Идэвхитэй эсэх</th>
                     <th style="text-align:center">Тайлбар</th>
                 </tr>
             </thead>
